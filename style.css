@@ -1,0 +1,42 @@
+body {
+  background: url(./galáxia.jpg);
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lua {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,155,255,0.5),
+              0 0 30px rgba(0,155,255,0.5),
+              0 0 45px rgba(0,155,255,0.5),
+              0 0 60px rgba(0,155,255,0.5),
+              0 0 10px rgba(0,155,255,0.5);
+  transform: translate(-50%,-50%);
+}
+.foguete{
+  top: -40%;
+  left: -40%;
+  right: -40%;
+  position: absolute;
+  transform-origin: 200px 200px;
+  animation: foguete 10s linear infinite;
+}
+.foguete img{
+  width: 85px;
+  height: 85px;
+}
+@keyframes foguete{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
