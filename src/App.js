@@ -1,12 +1,14 @@
-import './style.css'
+import { Banner } from './components/banner';
+import { Header } from './components/header';
+import { Weather } from './components/weader';
 
 function App() {
   return (
-    <div class="lua">
-    <div class="foguete">
-      <img src="./foguete.png" alt="foguete" /> 
-    </div>
-  </div>
+      <>
+      <Header/>
+         <Banner/>
+        <Weather/> 
+      </>
   );
 }
 

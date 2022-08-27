@@ -1,0 +1,80 @@
+.container {
+    background: url(../../../public/galáxia.jpg);
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.container .lua {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 155, 255, 0.5),
+        0 0 30px rgba(0, 155, 255, 0.5),
+        0 0 45px rgba(0, 155, 255, 0.5),
+        0 0 60px rgba(0, 155, 255, 0.5),
+        0 0 10px rgba(0, 155, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+.container .lua .foguete {
+    top: -40%;
+    left: -40%;
+    right: -40%;
+    position: absolute;
+    transform-origin: 200px 200px;
+    animation: foguete 10s linear infinite;
+}
+
+.container .lua .foguete img {
+    width: 85px;
+    height: 85px;
+}
+
+@media (max-width: 768px) {
+    .container .lua {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 155, 255, 0.5),
+                0 0 30px rgba(0, 155, 255, 0.5),
+                0 0 45px rgba(0, 155, 255, 0.5),
+                0 0 60px rgba(0, 155, 255, 0.5),
+                0 0 10px rgba(0, 155, 255, 0.5);
+            transform: translate(-50%, -50%);
+        }
+
+                .container .lua .foguete {
+                    top: -40%;
+                    left: -40%;
+                    right: -30%;
+                    position: absolute;
+                    transform-origin: 140px 140px;
+                    animation: foguete 10s linear infinite;
+                }
+                                .container .lua .foguete img {
+                                    width: 65px;
+                                    height: 65px;
+                                }
+}
+
+@keyframes foguete {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
